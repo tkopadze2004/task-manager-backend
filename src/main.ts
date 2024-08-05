@@ -15,7 +15,7 @@ async function bootstrap() {
   app.useGlobalFilters(new GlobalExceptionsFilter());
   app.use(loggerMiddleware);
   const document = setupSwagger(app);
-  await app.listen(process.env.PORT, '0.0.0.0');
+  await app.listen(process.env.PORT || 3000);
 }
 
 bootstrap();
