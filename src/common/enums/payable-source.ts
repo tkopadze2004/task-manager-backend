@@ -1,0 +1,6 @@
+export enum PayableSource {
+  SCHEDULE = 'SCHEDULE',
+  MANUAL_DEBT = 'MANUAL_DEBT',
+  MANUAL_FINE = 'MANUAL_FINE',
+  COMMUNAL_DEBT = 'COMMUNAL_DEBT',
+}
